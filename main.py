@@ -140,9 +140,6 @@ def output_results(result, count: int, time):
     result_plotter_obj.plot_phase(simulated_populations=simulated_populations)
 
 if __name__ == "__main__":
-    non_periodic_sim()
-
-    """
     requested_periodicity: str = ""
     allowed_values = {"periodic", "non-periodic"}
     while requested_periodicity not in allowed_values:
@@ -157,4 +154,3 @@ if __name__ == "__main__":
         non_periodic_sim()
     else:
         raise ValueError(f"Unknown requested periodicity '{requested_periodicity}'")
-    """
